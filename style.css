@@ -1,0 +1,39 @@
+body{
+    margin-bottom: 0;
+}
+.brick-layout {
+    width: 400px;
+    padding: 4px;
+    box-sizing: content-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.brick {
+    min-height: 80px;
+    min-width: 50px;
+    margin: 5px;
+    flex-basis: 100px;
+}
+
+.brick:nth-child(2n){
+    flex-grow: 1;
+}
+
+.color-aqua{
+    justify-items: start;
+    background-color: aqua;
+
+}
+
+.color-yellow{
+    justify-items: center;
+    background-color: yellow;
+}
+
+.color-fuchsia{
+    justify-items: end;
+    background-color: fuchsia;
+}
